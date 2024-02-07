@@ -8,7 +8,8 @@
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT lastName, firstName, jobTitle FROM employees
+WHERE jobTitle = 'Sales Rep';
 ```
 
 Output
@@ -45,7 +46,9 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT lastName, firstName, jobTitle, officeCode 
+FROM employees 
+WHERE jobTitle = 'Sales Rep' AND officeCode = 1;
 ```
 
 Output
@@ -67,7 +70,9 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT firstName, lastName, officeCode 
+FROM employees 
+WHERE officeCode IN (1, 2, 3);
 ```
 
 Output
@@ -98,7 +103,8 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT contactLastname, contactFirstname FROM customers
+ORDER BY contactLastname DESC, contactFirstname DESC;
 ```
 
 Output
@@ -127,7 +133,9 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT lastName, firstName, officeCode 
+FROM employees 
+WHERE officeCode IN (6,7);
 ```
 
 Output
@@ -154,7 +162,9 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT lastName, firstName, jobTitle, officeCode 
+FROM employees 
+WHERE jobTitle = 'Sales Rep' AND officeCode = 1;
 ```
 
 Output
@@ -177,7 +187,10 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT DISTINCT lastName
+FROM employees
+ORDER BY lastName ASC;
+
 ```
 
 Output
@@ -210,7 +223,9 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT customerName, country, state FROM customers
+WHERE country = 'USA' AND state = 'CA';
+
 ```
 
 Output
@@ -241,7 +256,10 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT c.customerName, c.country, c.state, c.creditLimit
+FROM customers c
+WHERE c.country = 'USA' AND c.state = 'CA' AND c.creditLimit >= 105000;
+
 ```
 
 Output
@@ -264,7 +282,10 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT o.officeCode, o.city, o.phone, o.country
+FROM offices o
+LIMIT 4;
+
 ```
 
 Output
