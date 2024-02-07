@@ -9,6 +9,9 @@ Answer
 
 ```sql
 /* SOME SQL STATEMENT  */
+
+SELECT lastName, firstName, jobTitle FROM employees
+WHERE jobTitle = "Sales Rep";
 ```
 
 Output
